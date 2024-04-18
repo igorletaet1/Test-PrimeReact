@@ -1,20 +1,15 @@
 import { Route, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 
-import { HomePage } from './pages/HomePage';
+import { Home } from './pages/Home';
 
-import { Layout } from './components/Layout'
-import {StepOne} from "./pages/StepOne";
-import {StepTwo} from "./pages/StepTwo";
+import { Layouts } from './components/Layouts'
+import {Table} from "./pages/Table";
 
 
 const router = createBrowserRouter(createRoutesFromElements(
-    <Route path="/" element={<Layout />}>
-        <Route index element={<HomePage />} />
-        <Route path="/step-one" index element={<StepOne />} />
-        <Route path="/step-two" index element={<StepTwo />} />
-
-
-
+    <Route path="/" element={<Layouts />}>
+        <Route index element={<Home />} />
+        <Route path="/table" index element={<Table />} />
     </Route>
 ))
 

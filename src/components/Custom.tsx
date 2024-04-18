@@ -1,6 +1,6 @@
 import { Link, useMatch } from 'react-router-dom';
 
-const CustomLink = ({children, to, ...props}: {children: any, to: any}) => {
+const Custom = ({children, to, ...props}: {children: any, to: any}) => {
     const match = useMatch({
         path: to,
         end: to.length === 1,
@@ -19,4 +19,4 @@ const CustomLink = ({children, to, ...props}: {children: any, to: any}) => {
     )
 }
 
-export {CustomLink};
+export {Custom};
