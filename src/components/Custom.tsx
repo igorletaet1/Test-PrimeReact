@@ -6,6 +6,8 @@ const Custom = ({children, to, ...props}: {children: any, to: any}) => {
         end: to.length === 1,
     });
 
+
+    
     return (
         <Link
             to={to}
